@@ -43,8 +43,8 @@ class spinner( object ):
     
 #     transform text into spintax with the folowing steps
 #     1. split the text to sentences
-#     2. loop through the sentences and tokenize each
-#     3. loop thorugh each token and assemble all the synonyms of it into the spintax
+#     2. loop through the sentences and tokenize it
+#     3. loop thorugh each token, find its stem and assemble all the synonyms of it into the spintax
     def getSpintax(self, text):
         sentences = self.splitToSentences(text)
         stemmer = PorterStemmer()
